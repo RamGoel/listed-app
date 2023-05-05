@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import Login from './auth/Login/Login';
+import Login from './Login/Login';
+import Dashboard from './Dashboard/Dashboard';
 
 function Header({ title }) {
   return <h1>{title ? title : 'Default title'}</h1>;
@@ -8,6 +9,7 @@ function Header({ title }) {
 export default function HomePage() {
 
   return (
-    <Login />
+    // <Login />
+    <Dashboard />
   );
 }

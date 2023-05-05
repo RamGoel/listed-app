@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.body {
+    display: flex;
+    height: 100vh;
+    background: rgba(245, 245, 245, 1);
+    flex-wrap: wrap;
+
+}
+
+.bodyLeft {
+    width: 50%;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodyLeft h2{
+    color: white;
+    font-size: 100px;
+}
+
+.bodyRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.bodyRightContent{
+    width: 65%;
+}
+
+.bodyRightContent h2{
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bodyRightContent p{
+    margin: 5px 0px;
+    padding: 0px;
+}
+.loginButtons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0px;
+}
+
+.loginButtons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: .5px solid rgb(243, 243, 243);
+    margin-right:10px;
+    border-radius: 10px;
+}
+
+.loginButtons button p{
+    margin: 0px;
+    padding: 10px;
+    color: gray;
+}
+
+
+.loginForm{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding: 20px;
+    
+    
+}
+
+.loginForm div{
+    width: 90%;
+}
+
+.formSection{
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.loginForm div p{
+    margin: 5px 0px;
+    font-size: 13px;
+}
+
+.formLink{
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(0, 81, 255);
+
+}
+
+.loginBottom{
+    text-align: center;
+    width: 90%;
+}
+
+.loginBottom p{
+    font-size: 13px;
+}
+
+.loginBottomLink{
+    text-decoration: none;
+    color: rgb(0, 81, 255);
+}
+
