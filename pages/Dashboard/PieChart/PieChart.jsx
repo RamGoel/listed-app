@@ -1,24 +1,8 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './pie.module.css'
-import { Data } from '../../../utils/data'
 import { Pie } from 'react-chartjs-2'
 import angleDown from '../../../assets/angle-down.png'
 import Image from 'next/image'
-
-
-const data = {
-    labels: Data.map(e => e.year),
-    datasets: [
-        {
-            label: 'No. of Users gained',
-            data: Data.map((e, index) => (index < 3) ? e.userGain : null),
-            lineTension: 0.3,
-            borderWidth: 2,
-            backgroundColor: ['#E9A0A0', '#98D89E', '#F6DC7D'],
-            borderColor: ['#E9A0A0', '#98D89E', '#F6DC7D']
-        },
-    ]
-}
 
 function StatCard({ data }) {
     return <div className={styles.pieDataRight}>
@@ -33,7 +17,7 @@ function StatCard({ data }) {
 
 
 
-function PieChart() {
+function PieChart({ usersData }) {
 
     var pieData = [
         {
@@ -58,13 +42,13 @@ function PieChart() {
                 <h3>Top Products</h3>
                 <div className={styles.pieHeaderLeft}>
                     <p>May - June 2021</p>
-                    <Image src={angleDown} />
+                    <Image alt="app-image" src={angleDown} />
                 </div>
             </div>
             <div className={styles.pieView}>
                 <div className={styles.chartBox}>
                     <Pie
-                        data={data}
+                        data={usersData}
                         options={{
                             responsive: true,
                             maintainAspectRatio: false,
@@ -78,8 +62,8 @@ function PieChart() {
                 </div>
                 <div className={styles.chartTextBottomRight}>
                     {
-                        pieData.map(productStats => {
-                            return <StatCard data={productStats} />
+                        pieData.map((productStats, index) => {
+                            return <StatCard key={index} data={productStats} />
                         })
                     }
                 </div>

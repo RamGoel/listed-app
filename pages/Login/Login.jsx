@@ -1,9 +1,24 @@
 import React from 'react'
 import styles from './login.module.css'
+import { signIn } from 'next-auth/react'
 import Input from '../../atoms/Input'
 import Link from 'next/link'
 import Button from '../../atoms/Button'
+import {useRouter} from 'next/router'
+import { signInWithPopup } from 'firebase/auth'
+import { auth, googleProvider } from '../../utils/firebase'
 function Login() {
+  const router=useRouter()
+  function handleLogin() {
+    signInWithPopup(auth,googleProvider).then(e => {
+      router.push({
+        pathname:'/Dashboard/Dashboard',
+        query:{profileImage:e.user.photoURL}
+      },`/Dashboard/Dashboard`)
+    }).catch(err=>{
+      console.log(err)
+    })
+  }
   return (
     <div className={styles.body}>
       <div className={styles.bodyLeft}>
@@ -12,11 +27,10 @@ function Login() {
       <div className={styles.bodyRight}>
         <div className={styles.bodyRightContent}>
           <div className={styles.loginFormTop}>
-
             <h2>Sign In</h2>
             <p>Sign in to your account</p>
             <div className={styles.loginButtons}>
-              <button>
+              <button onClick={() => handleLogin()}>
                 <img src='https://cdn-icons-png.flaticon.com/512/2991/2991148.png' width={20} />
                 <p>Sign in with Google</p>
               </button>
@@ -29,26 +43,26 @@ function Login() {
           <div className={styles.loginForm}>
             <div>
 
-            <div className={styles.formSection}>
-              <p>Email Address</p>
-              <Input placeholder={''} isSecure={false} />
-            </div>
-            <div className={styles.formSection}>
-              <p>Password</p>
-              <Input placeholder={''} isSecure={true} />
-            </div>
-            <div className={styles.formSection}>
-              <Link href={'/'} className={styles.formLink}>Forgot Password?</Link>
-            </div>
-            <div>
-              <Button btnText={'Sign in'} />
-            </div>
+              <div className={styles.formSection}>
+                <p>Email Address</p>
+                <Input placeholder={''} isSecure={false} />
+              </div>
+              <div className={styles.formSection}>
+                <p>Password</p>
+                <Input placeholder={''} isSecure={true} />
+              </div>
+              <div className={styles.formSection}>
+                <Link href={'/'} className={styles.formLink}>Forgot Password?</Link>
+              </div>
+              <div>
+                <Button btnText={'Sign in'} />
+              </div>
             </div>
           </div>
           <div className={styles.loginBottom}>
-            <p>Don't have an account, <Link 
-            href={'/'}
-            className={styles.loginBottomLink}>Register here</Link></p>
+            <p>Don't have an account, <Link
+              href={'/'}
+              className={styles.loginBottomLink}>Register here</Link></p>
           </div>
         </div>
       </div>

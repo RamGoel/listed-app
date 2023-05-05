@@ -13,7 +13,7 @@ function SidebarLink({ data, index, handleClick, isActive }) {
     <div className={styles.sidebarLink} onClick={() => {
       handleClick(index)
     }}>
-      <Image className={styles.sidebarLinkIcon} src={data.icon} />
+      <Image alt="app-image" className={styles.sidebarLinkIcon} src={data.icon} />
       <p style={{
         fontWeight: (isActive) ? 'bold' : ''
       }}>{data.title}</p>
@@ -57,6 +57,7 @@ function Sidebar() {
                 {
                   sidebarData.map((data,index)=>{
                       return <SidebarLink 
+                      key={index}
                       data={data} 
                       handleClick={(val)=>setActive(val)} 
                       index={index+1}

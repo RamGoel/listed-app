@@ -1,39 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import styles from './chart.module.css'
 import Chart from "chart.js/auto";
 import angleDown from '../../../assets/angle-down.png'
 import { CategoryScale } from "chart.js";
 import { Line } from 'react-chartjs-2';
-import { Data } from '../../../utils/data';
+
 Chart.register(CategoryScale);
 
 
-const data = {
-    labels: Data.map(e => e.year),
-    datasets: [
-        {
-            label: 'No. of Users gained',
-            data: Data.map(e => e.userGain),
-            lineTension: 0.3,
-            lineWidth:2,
-            borderWidth: 2,
-            borderColor: '#E9A0A0',
-
-        },
-        {
-            label: 'No. of Users Lost',
-            data: Data.map(e => e.userLost),
-            lineTension: 0.3,
-            borderWidth: 2,
-            borderColor: '#9BDD7C'
-        }
-    ]
-}
-
-
-
-function LineChart() {
+function LineChart({usersData}) {
     return (
         <div className={styles.chartDiv}>
             <div className={styles.chartText}>
@@ -44,7 +20,7 @@ function LineChart() {
                 <div className={styles.chartTextBottom}>
                     <div className={styles.chartTextBottomLeft}>
                         <p>May - June 2021</p>
-                        <Image src={angleDown} />
+                        <Image alt="app-image" src={angleDown} />
                     </div>
                     <div className={styles.chartTextBottomRight}>
                         <div className={styles.chartTextBottomRight1}>
@@ -63,7 +39,7 @@ function LineChart() {
                     style={{
                         height: '200px',
                     }}
-                    data={data}
+                    data={usersData}
                     options={{
                         responsive: true,
                         maintainAspectRatio: false,

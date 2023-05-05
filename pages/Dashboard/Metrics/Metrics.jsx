@@ -38,8 +38,8 @@ function Metrics() {
     return (
         <div className={styles.metricBox}>
             {
-                data.map(e=>{
-                    return <MetricCard metrics={e} />
+                data.map((e,index)=>{
+                    return <MetricCard key={index} metrics={e} />
                 })
             }
         </div>

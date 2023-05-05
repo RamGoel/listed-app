@@ -41,14 +41,14 @@ function Schedule() {
                 <h3>Today's Schedule</h3>
                 <div className={styles.scheduleHeaderLeft}>
                     <p>See All</p>
-                    <Image src={angleRight} />
+                    <Image alt="app-image" src={angleRight} />
                 </div>
             </div>
             <div>
 
             {
-                data?.map(data=>{
-                    return <ScheduleDiv data={data} />
+                data?.map((data,index)=>{
+                    return <ScheduleDiv key={index} data={data} />
                 })
             }
             </div>

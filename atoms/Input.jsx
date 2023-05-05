@@ -21,7 +21,7 @@ function Input({ placeholder, propStyle, isSecure, isIcon, iconSrc }) {
                     width:(isIcon)?'80%':'100%'
                 }}
             />
-            {(isIcon)?<Image style={{
+            {(isIcon)?<Image alt="app-image" style={{
                 margin:'auto'
             }} src={iconSrc} />:''}
         </div>

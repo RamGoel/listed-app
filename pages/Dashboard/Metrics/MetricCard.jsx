@@ -5,7 +5,7 @@ function MetricCard({metrics}) {
   return (
     <div className={styles.metricCard} style={{background:metrics.background}}>
         <div className={styles.metricCardTop}>
-            <Image
+            <Image alt="app-image"
                 className={styles.metricCardImage}
                 src={metrics.icon}
             />
