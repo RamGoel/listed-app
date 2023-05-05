@@ -1,7 +1,6 @@
 .chartDiv{
-    width: 90%;
+    max-width: 87%;
     background-color: white;
-    border-radius: 20px;
     padding: 20px;
     margin: auto;
 }
@@ -10,6 +9,7 @@
     margin: 0px;
     padding: 0px;
 }
+
 .chartTextBottom{
     display: flex;
     align-items: center;
@@ -24,6 +24,7 @@
     margin: 0;
     margin-right: 10px;
     padding: 0;
+    opacity: 0.5;
 }
 
 .chartTextBottomRight{

@@ -4,6 +4,8 @@ import Sidebar from './Sidebar/Sidebar'
 import Header from './Header/Header'
 import Metrics from './Metrics/Metrics'
 import LineChart from './LineChart/LineChart'
+import PieChart from './PieChart/PieChart'
+import Schedule from './Schedule/Schedule'
 function Dashboard() {
   return (
     <div className={styles.dashboard}>
@@ -15,6 +17,10 @@ function Dashboard() {
         <Header />
         <Metrics />
         <LineChart />
+        <div className={styles.dashRightCards}>
+          <PieChart />
+          <Schedule />
+        </div>
       </div>
     </div>
   )

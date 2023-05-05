@@ -1,0 +1,80 @@
+.pieBox {
+    background-color: white;
+    border-radius: 20px;
+    width: 46%;
+    padding: 20px;
+}
+
+.pieHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.pieHeader p{
+    opacity: 0.5;
+}
+.pieView {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.chartBox {
+    width: 50%;
+}
+
+
+.chartTextBottomRight {
+    width: 100%;
+}
+
+.pieDataRight p{
+    width: 90%;
+    margin-left: auto;
+    opacity: 0.5;
+}
+.chartTextBottomRight1,
+.chartTextBottomRight2, .chartTextBottomRight3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.chartTextBottomRight1 div {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 200px;
+    background-color: #E9A0A0;
+}
+
+.chartTextBottomRight2 div {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 200px;
+    background-color: #98D89E;
+}
+.chartTextBottomRight3 div {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 200px;
+    background-color: #F6DC7D;
+}
+
+.pieHeaderLeft{
+    display: flex;
+    align-items: center;
+}
+.pieHeaderLeft p{
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    opacity: 0.5;
+}

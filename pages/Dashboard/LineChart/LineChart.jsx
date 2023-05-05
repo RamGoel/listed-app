@@ -16,6 +16,7 @@ const data = {
             label: 'No. of Users gained',
             data: Data.map(e => e.userGain),
             lineTension: 0.3,
+            lineWidth:2,
             borderWidth: 2,
             borderColor: '#E9A0A0',
 
