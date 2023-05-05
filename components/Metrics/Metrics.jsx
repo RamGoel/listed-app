@@ -1,10 +1,9 @@
 import React from 'react'
 import './MetricCard'
-import peopleIcon from '../../../assets/people_icon.png';
-import cashIcon from '../../../assets/cash_icon.png';
-import likeIcon from '../../../assets/like_icon.png';
-import transactIcon from '../../../assets/transact_icon_black.png';
-
+import peopleIcon from '../../assets/people_icon.png';
+import cashIcon from '../../assets/cash_icon.png';
+import likeIcon from '../../assets/like_icon.png';
+import transactIcon from '../../assets/transact_icon_black.png';
 import styles from './metrics.module.css'
 import MetricCard from './MetricCard';
 function Metrics() {

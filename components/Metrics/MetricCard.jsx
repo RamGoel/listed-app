@@ -3,7 +3,7 @@ import styles from './metrics.module.css'
 import Image from 'next/image'
 function MetricCard({metrics}) {
   return (
-    <div className={styles.metricCard} style={{background:metrics.background}}>
+    <div className={styles.metricCard} style={{background:metrics.background || 'white'}}>
         <div className={styles.metricCardTop}>
             <Image alt="app-image"
                 className={styles.metricCardImage}

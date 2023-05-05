@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './schedule.module.css'
-import angleRight from '../../../assets/angle-right.png'
+import angleRight from '../../assets/angle-right.png'
 import Image from 'next/image'
 
 function ScheduleDiv({data}){

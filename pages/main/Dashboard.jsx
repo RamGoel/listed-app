@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import styles from './dashboard.module.css'
-import Sidebar from './Sidebar/Sidebar'
-import Header from './Header/Header'
-import Metrics from './Metrics/Metrics'
-import LineChart from './LineChart/LineChart'
-import PieChart from './PieChart/PieChart'
-import Schedule from './Schedule/Schedule'
+import Sidebar from '../../components/Sidebar/Sidebar'
+import Header from '../../components/Header/Header'
+import Metrics from '../../components/Metrics/Metrics'
+import LineChart from '../../components/LineChart/LineChart'
+import PieChart from '../../components/PieChart/PieChart'
+import Schedule from '../../components/Schedule/Schedule'
 import Loader from '../../atoms/Loader'
 import { useRouter } from 'next/router'
 function Dashboard() {
   const router = useRouter();
-  const [userImage,setUserImage]=useState('')
+  const [userImage, setUserImage] = useState('')
   const [lineData, setLineData] = useState({})
   const [pieData, setPieData] = useState({})
   const [isLoaded, setLoaded] = useState(false)
@@ -65,8 +65,12 @@ function Dashboard() {
   useEffect(() => {
     setUserImage(router.query.profileImage);
   }, [router.query]);
+
+
+  if (!isLoaded) return <Loader />
+  if (lineData == {} || pieData == {}) return <p>Error</p>
   return (
-    (isLoaded) ? <div className={styles.dashboard}>
+    <div className={styles.dashboard}>
 
       <div className={styles.dashLeft}>
         <Sidebar />
@@ -80,7 +84,7 @@ function Dashboard() {
           <Schedule />
         </div>
       </div>
-    </div> : <Loader />
+    </div>
   )
 }
 

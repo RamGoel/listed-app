@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import styles from './sidebar.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import dashboadIcon from '../../../assets/dashboard_icon.png'
-import scheduleIcon from '../../../assets/schedule_icon.png'
-import settingIcon from '../../../assets/setting_icon.png'
-import transactIcon from '../../../assets/transaction_icon.png'
-import userIcon from '../../../assets/user_icon.png'
+import dashboadIcon from '../../assets/dashboard_icon.png'
+import scheduleIcon from '../../assets/schedule_icon.png'
+import settingIcon from '../../assets/setting_icon.png'
+import transactIcon from '../../assets/transaction_icon.png'
+import userIcon from '../../assets/user_icon.png'
 
 function SidebarLink({ data, index, handleClick, isActive }) {
   return (

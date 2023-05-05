@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import styles from './chart.module.css'
 import Chart from "chart.js/auto";
-import angleDown from '../../../assets/angle-down.png'
+import angleDown from '../../assets/angle-down.png'
 import { CategoryScale } from "chart.js";
 import { Line } from 'react-chartjs-2';
 

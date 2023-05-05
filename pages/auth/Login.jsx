@@ -12,9 +12,9 @@ function Login() {
   function handleLogin() {
     signInWithPopup(auth,googleProvider).then(e => {
       router.push({
-        pathname:'/Dashboard/Dashboard',
+        pathname:'/main/Dashboard',
         query:{profileImage:e.user.photoURL}
-      },`/Dashboard/Dashboard`)
+      },`/dashboard`)
     }).catch(err=>{
       console.log(err)
     })

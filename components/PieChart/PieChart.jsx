@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styles from './pie.module.css'
 import { Pie } from 'react-chartjs-2'
-import angleDown from '../../../assets/angle-down.png'
+import angleDown from '../../assets/angle-down.png'
 import Image from 'next/image'
 
 function StatCard({ data }) {

@@ -1,10 +1,10 @@
 import React from 'react'
-import Input from '../../../atoms/Input'
+import Input from '../../atoms/Input'
 import styles from './header.module.css'
 import Image from 'next/image'
-import bellIcon from '../../../assets/notifications_icon.png'
-import userImage from '../../../assets/account_icon.png'
-import searchIcon from '../../../assets/search_icon.png'
+import bellIcon from '../../assets/notifications_icon.png'
+import userImage from '../../assets/account_icon.png'
+import searchIcon from '../../assets/search_icon.png'
 function Header({ googleAccountImage }) {
     return (
         <div className={styles.header}>
