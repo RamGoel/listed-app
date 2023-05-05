@@ -3,9 +3,12 @@
 body{
     margin: 0px;
     padding: 0px;
-    /* overflow: hidden; */
-    font-family: 'Montserrat';
     background: rgba(245, 245, 245, 1);
+}
+
+*{
+    
+    font-family: 'Montserrat';
 }
 
 p,h1,h2,h3,h4,h5,h6{
@@ -20,4 +23,12 @@ p{
 
 h3{
     font-size: 15px;
+}
+
+input:focus-visible{
+    outline: none;
+}
+
+button{
+    cursor: pointer;
 }

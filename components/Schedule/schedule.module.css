@@ -26,3 +26,20 @@
     padding: 0;
     opacity: 0.5;
 }
+
+
+
+@media screen and (max-width:768px) {
+    .scheduleHeaderLeft{
+        width: 50%;
+        justify-content: flex-end;
+    }
+    .scheduleHeader>h3{
+        width: 50%;
+    }
+    .scheduleCard{
+        width: 100%;
+        margin-top: 10px;
+    }
+   
+}

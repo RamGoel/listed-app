@@ -1,6 +1,6 @@
 .sidebar{
     width: 90%;
-    height: 97vh;
+    height: 95vh;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -9,7 +9,7 @@
 
 .sidebarDiv{
     background-color: black;
-    height:95%;
+    height:100%;
     border-radius: 20px;
     color: white;
     width: 100%;
@@ -83,6 +83,9 @@
     }
     .sidebarLinkIcon{
         margin:0
+    }
+    .sidebarBottom{
+        display: none;
     }
     
 }

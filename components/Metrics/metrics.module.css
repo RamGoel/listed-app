@@ -45,7 +45,7 @@
 
 @media screen and (max-width:600px) {
     .metricCard{
-        width: 60%;
+        width: 100%;
     }
     .metricBox{
         justify-content: flex-start;

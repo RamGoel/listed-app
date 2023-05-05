@@ -60,3 +60,14 @@
 .chartView{
     margin: 10px 0px;
 }
+
+
+@media screen and (max-width:768px) {
+    .chartTextBottomRight{
+        width: 50%;
+    }
+    .chartDiv{
+        width: 90%;
+        margin: auto;
+    }
+}

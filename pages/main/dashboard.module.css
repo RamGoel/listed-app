@@ -38,9 +38,8 @@
     .dashRightCards{
         flex-wrap: wrap;
     }
-    .dashRightCards div{
+    .dashRight{
         width: 100%;
-        margin: 10px 0px;
     }
 }
 
@@ -55,7 +54,10 @@
 }
 
 @media screen and (max-width:450px) {
-    .bodyRight{
+    .dashRight{
         width: 100%;
+    }
+    .dashLeft{
+        display: none !important;
     }
 }
