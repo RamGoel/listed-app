@@ -17,14 +17,14 @@ function Metrics() {
         },
         {
             name:"Total Transactions",
-            value:"1520",
+            value:"1,520",
             icon:transactIcon,
             background: '#F4ECDD'
 
         },
         {
             name:"Total Likes",
-            value:"9721",
+            value:"9,721",
             icon:likeIcon,
             background: '#EFDADA'
         },

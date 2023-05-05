@@ -1,0 +1,58 @@
+.chartDiv{
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+}
+.chartTextTop{
+}
+
+.chartTextTop h3{
+    margin: 0px;
+    padding: 0px;
+}
+.chartTextBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chartTextBottomLeft{
+    display: flex;
+    align-items: center;
+}
+.chartTextBottomLeft p{
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.chartTextBottomRight{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    justify-content: space-around;
+}
+
+.chartTextBottomRight1, .chartTextBottomRight2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.chartTextBottomRight1 div{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 200px;
+    background-color: #EFDADA;
+}
+.chartTextBottomRight2 div{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 200px;
+    background-color: #DDEFE0;
+}

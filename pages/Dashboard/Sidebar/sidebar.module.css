@@ -31,6 +31,14 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin: 20px 0px;
+    cursor: pointer;
+
+}
+
+.sidebarLink p{
+    margin: 0px;
+    padding: 0px;
 }
 
 .sidebarLinkIcon{
@@ -48,4 +56,32 @@
     text-decoration: none;
     display: block;
     font-size: 13px
+}
+
+
+
+@media screen and (max-width:768px) {
+    .sidebarLink p{
+        display: none;
+    }
+    .dashTitleSpan{
+        display: none;
+    }
+    .sidebar{
+        padding: 0px;
+    }
+    .sidebarDiv{
+        border-radius: 0px;
+    }
+    .sidebarContent{
+        width: 100%;
+        text-align: center;
+    }
+    .sidebarLink{
+        justify-content: center;
+    }
+    .sidebarLinkIcon{
+        margin:0
+    }
+    
 }

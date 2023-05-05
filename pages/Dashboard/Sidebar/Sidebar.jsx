@@ -15,7 +15,7 @@ function Sidebar() {
           <div className={styles.sidebarTop}>
 
           <div className={styles.sidebarHead}>
-            <h2>Board.</h2>
+            <h2>B<span className={styles.dashTitleSpan}>oard</span>.</h2>
           </div>
           <div className={styles.sidebarLinkSection}>
             <div className={styles.sidebarLink}>

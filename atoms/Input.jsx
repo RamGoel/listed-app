@@ -6,7 +6,6 @@ function Input({ placeholder, propStyle, isSecure, isIcon, iconSrc }) {
             display:'flex',
             alignItems:'center',
             justifyContent:'space-between',
-            padding:'10px',
             background: '#eaeaea',
             borderRadius:'10px',
             width:'100%',
@@ -16,11 +15,15 @@ function Input({ placeholder, propStyle, isSecure, isIcon, iconSrc }) {
                 placeholder={placeholder}
                 type={(isSecure)?'password':'text'}
                 style={{
+                    padding:'10px',
                     background:'transparent',
                     border:'none',
+                    width:(isIcon)?'80%':'100%'
                 }}
             />
-            {(isIcon)?<Image src={iconSrc} />:''}
+            {(isIcon)?<Image style={{
+                margin:'auto'
+            }} src={iconSrc} />:''}
         </div>
     )
 }

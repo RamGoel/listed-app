@@ -15,3 +15,31 @@
 .dashRight{
     flex-direction: column;
 }
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    .dashLeft{
+        width: 10%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .loginButtons{
+        flex-wrap: wrap;
+    }
+    .loginButtons button{
+        width: 100%;
+        margin: 5px 0px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .bodyRight{
+        width: 100%;
+    }
+}

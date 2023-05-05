@@ -7,14 +7,15 @@
     margin: auto;
 }
 
-.metricCardTop{
-    text-align: end;
-}
 .metricCard{
     color: black;
     padding: 20px;
     width: 20%;
+    margin: 10px 0px;
     border-radius: 20px;
+}
+.metricCardTop{
+    text-align: end;
 }
 
 .metricCardBottom p{
@@ -24,4 +25,21 @@
     font-size: 30px;
     margin: 5px 0px;
     padding: 0px;
+}
+
+
+
+@media screen and (max-width:1070px) {
+    .metricCard{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .metricCard{
+        width: 60%;
+    }
+    .metricBox{
+        justify-content: flex-start;
+    }
 }

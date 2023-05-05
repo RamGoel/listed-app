@@ -29,7 +29,7 @@
 }
 
 .bodyRightContent{
-    width: 65%;
+    width: 60%;
 }
 
 .bodyRightContent h2{
@@ -47,6 +47,7 @@
     align-items: center;
     justify-content: flex-start;
     margin: 10px 0px;
+    width: 100%;
 }
 
 .loginButtons button{
@@ -57,6 +58,7 @@
     border: .5px solid rgb(243, 243, 243);
     margin-right:10px;
     border-radius: 10px;
+    width: 45%;
 }
 
 .loginButtons button p{
@@ -100,7 +102,7 @@
 
 .loginBottom{
     text-align: center;
-    width: 90%;
+    width: 100%;
 }
 
 .loginBottom p{
@@ -112,3 +114,36 @@
     color: rgb(0, 81, 255);
 }
 
+
+
+@media screen and (max-width:1070px) {
+    .bodyLeft{
+        display: none;
+    }
+    .bodyRight{
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .bodyRight{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .loginButtons{
+        flex-wrap: wrap;
+    }
+    .loginButtons button{
+        width: 100%;
+        margin: 5px 0px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .bodyRight{
+        width: 100%;
+    }
+}

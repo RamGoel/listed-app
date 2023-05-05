@@ -39,3 +39,35 @@
      
 }
 
+
+
+@media screen and (max-width:768px) {
+    .headerRight{
+        width: 80%;
+    }
+    
+}
+
+
+
+@media screen and (max-width:600px) {
+    .header{
+        justify-content: flex-start;
+    }
+    .headerLeft h3{
+        display: none;
+    }
+    .headerLeft{
+        width: 0%;
+    }
+    .headerRight{
+        width: 100% !important;
+    }
+    .headerIcon{
+        width: 20%;
+    }
+    .headerSearch{
+        width: 70%;
+    }
+}
+

@@ -3,6 +3,7 @@ import styles from './dashboard.module.css'
 import Sidebar from './Sidebar/Sidebar'
 import Header from './Header/Header'
 import Metrics from './Metrics/Metrics'
+import LineChart from './LineChart/LineChart'
 function Dashboard() {
   return (
     <div className={styles.dashboard}>
@@ -13,6 +14,7 @@ function Dashboard() {
       <div className={styles.dashRight}>
         <Header />
         <Metrics />
+        <LineChart />
       </div>
     </div>
   )
