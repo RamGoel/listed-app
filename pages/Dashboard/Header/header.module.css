@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.headerLeft{
+    width: 30%;
+}
+.headerRight{
+    width: 40%;
+}
+.header div{
+    display: flex;
+    align-items: center;
+}
+.headerSearch{
+    width: 60%;
+}
+.headerIcon{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerImage{
+     border-radius: 200px;
+     
+}
+
