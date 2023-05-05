@@ -4,6 +4,8 @@ import { Data } from '../../../utils/data'
 import { Pie } from 'react-chartjs-2'
 import angleDown from '../../../assets/angle-down.png'
 import Image from 'next/image'
+
+
 const data = {
     labels: Data.map(e => e.year),
     datasets: [
@@ -18,20 +20,49 @@ const data = {
     ]
 }
 
+function StatCard({ data }) {
+    return <div className={styles.pieDataRight}>
+
+        <div className={styles.chartTextBottomRight1}>
+            <div style={{ background: data.color }}></div>
+            <h3>{data.title}</h3>
+        </div>
+        <p>{data.percentage}</p>
+    </div>
+}
+
+
 
 function PieChart() {
+
+    var pieData = [
+        {
+            color: '#E9A0A0',
+            title: 'Basic Tees',
+            percentage: '55%'
+        },
+        {
+            color: '#98D89E',
+            title: 'Custom Short Pants',
+            percentage: '31%'
+        },
+        {
+            color: '#F6DC7D',
+            title: 'Super Hoodies',
+            percentage: '14%'
+        },
+    ]
     return (
         <div className={styles.pieBox}>
             <div className={styles.pieHeader}>
                 <h3>Top Products</h3>
                 <div className={styles.pieHeaderLeft}>
-                <p>May - June 2021</p>
-                <Image src={angleDown} />
+                    <p>May - June 2021</p>
+                    <Image src={angleDown} />
                 </div>
             </div>
             <div className={styles.pieView}>
                 <div className={styles.chartBox}>
-
                     <Pie
                         data={data}
                         options={{
@@ -46,30 +77,11 @@ function PieChart() {
                     />
                 </div>
                 <div className={styles.chartTextBottomRight}>
-                    <div className={styles.pieDataRight}>
-
-                        <div className={styles.chartTextBottomRight1}>
-                            <div></div>
-                            <h3>Guest</h3>
-                        </div>
-                        <p>55%</p>
-                    </div>
-                    <div className={styles.pieDataRight}>
-
-                        <div className={styles.chartTextBottomRight2}>
-                            <div></div>
-                            <h3>Guest</h3>
-                        </div>
-                        <p>55%</p>
-                    </div>
-                    <div className={styles.pieDataRight}>
-
-                        <div className={styles.chartTextBottomRight3}>
-                            <div></div>
-                            <h3>Guest</h3>
-                        </div>
-                        <p>55%</p>
-                    </div>
+                    {
+                        pieData.map(productStats => {
+                            return <StatCard data={productStats} />
+                        })
+                    }
                 </div>
             </div>
         </div>

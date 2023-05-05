@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=family=Montserrat&display=swap');
 
 body{
     margin: 0px;
     padding: 0px;
     /* overflow: hidden; */
-    font-family: 'Poppins';
+    font-family: 'Montserrat';
     background: rgba(245, 245, 245, 1);
 }
 

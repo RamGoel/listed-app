@@ -5,9 +5,15 @@ import Image from 'next/image'
 
 function ScheduleDiv({data}){
     return(
-        <div className={styles.scheduleDiv}>
+        <div style={{
+            borderLeft:`5px solid ${data.color}`,
+            paddingLeft:'10px',
+            margin:'15px 0px'
+        }}>
             <h3>{data.text}</h3>
-            <p>{data.startTime}-{data.endTime}</p>
+            <p style={{
+                margin:'5px 0px'
+            }}>{data.startTime}-{data.endTime}</p>
             <p>at {data.location}</p>
         </div>
     )
@@ -18,13 +24,15 @@ function Schedule() {
             text:"Meeting with suppliers from Kuta Bali",
             startTime:"14.00",
             endTime:"15.00",
-            location:"Sunset Road, Kuta, Bali "
+            location:"Sunset Road, Kuta, Bali ",
+            color:'#9BDD7C'
         },
         {
             text:"Check operation at Giga Factory 1",
             startTime:"18:00",
             endTime:"20:00",
-            location:"Central Jakarta"
+            location:"Central Jakarta",
+            color:'#6972C3'
         },
     ]
     return (

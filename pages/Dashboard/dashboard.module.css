@@ -30,12 +30,17 @@
 }
 
 
-
-
 @media screen and (max-width:768px) {
     .dashLeft{
         width: 10%;
         justify-content: center;
+    }
+    .dashRightCards{
+        flex-wrap: wrap;
+    }
+    .dashRightCards div{
+        width: 100%;
+        margin: 10px 0px;
     }
 }
 

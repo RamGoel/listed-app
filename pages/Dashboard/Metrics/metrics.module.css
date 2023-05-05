@@ -4,7 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 90%;
-    margin: auto;
+    margin: 10px auto;
 }
 
 .metricCard{
@@ -17,17 +17,25 @@
 .metricCardTop{
     text-align: end;
 }
-
+.metricCardImage{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
 .metricCardBottom p{
     margin: 0;
 }
 .metricCardBottom h3{
-    font-size: 30px;
+    font-size: 17px;
+    font-weight: 700 !important;
     margin: 5px 0px;
     padding: 0px;
 }
 
-
+.metricCard:hover{
+    transition: 0.5s;
+    cursor: pointer;
+}
 
 @media screen and (max-width:1070px) {
     .metricCard{

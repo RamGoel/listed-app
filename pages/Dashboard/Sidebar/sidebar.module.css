@@ -9,7 +9,7 @@
 
 .sidebarDiv{
     background-color: black;
-    height: 90vh;
+    height:95%;
     border-radius: 20px;
     color: white;
     width: 100%;
@@ -39,6 +39,7 @@
 .sidebarLink p{
     margin: 0px;
     padding: 0px;
+    font-size: 12px;
 }
 
 .sidebarLinkIcon{

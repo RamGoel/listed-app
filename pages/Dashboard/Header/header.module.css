@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     width: 90%;
+    height: 10vh;
     margin: auto;
     justify-content: space-between;
 }
@@ -12,7 +13,7 @@
 }
 .headerLeft h3{
     margin-right: auto;
-    font-size: 25px;
+    font-size: 17px;
     font-weight: bold;
 }
 .headerRight{
