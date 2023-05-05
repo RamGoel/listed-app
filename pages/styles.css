@@ -3,7 +3,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: 'Poppins';
     background: rgba(245, 245, 245, 1);
 }

@@ -1,11 +1,9 @@
 .chartDiv{
     width: 90%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px;
     margin: auto;
-}
-.chartTextTop{
 }
 
 .chartTextTop h3{
@@ -55,4 +53,8 @@
     margin-right: 10px;
     border-radius: 200px;
     background-color: #DDEFE0;
+}
+
+.chartView{
+    margin: 10px 0px;
 }
