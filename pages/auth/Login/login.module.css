@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.body {
+    display: flex;
+    height: 100vh;
+    font-family: 'Poppins';
+}
+
+.bodyLeft {
+    width: 50%;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodyLeft h2{
+    color: white;
+    font-size: 100px;
+}
+
+.bodyRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginButtons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: .5px solid gray;
+    margin-right:10px
+}
