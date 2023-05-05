@@ -4,6 +4,7 @@ import styles from './header.module.css'
 import Image from 'next/image'
 import bellIcon from '../../../assets/notifications_icon.png'
 import userImage from '../../../assets/account_icon.png'
+import searchIcon from '../../../assets/search_icon.png'
 function Header() {
     return (
         <div className={styles.header}>
@@ -12,10 +13,16 @@ function Header() {
             </div>
             <div className={styles.headerRight}>
                 <div className={styles.headerSearch}>
-                    <Input placeholder={'Search...'} />
+                    <Input 
+                    placeholder={'Search...'}
+                    isIcon={true}
+                    iconSrc={searchIcon}
+                    propStyle={{
+                        backgroundColor:'white'
+                    }} />
                 </div>
                 <div className={styles.headerIcon}>
-                    <Image src={bellIcon} />
+                    <Image src={bellIcon} style={{margin:'auto'}} />
                 </div>
                 <Image className={styles.headerImage} src={userImage} />
 

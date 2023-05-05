@@ -8,6 +8,12 @@
 
 .headerLeft{
     width: 30%;
+    text-align: start;
+}
+.headerLeft h3{
+    margin-right: auto;
+    font-size: 25px;
+    font-weight: bold;
 }
 .headerRight{
     width: 40%;
@@ -15,19 +21,21 @@
 .header div{
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 .headerSearch{
     width: 60%;
 }
 .headerIcon{
     width: 10%;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .headerImage{
-     border-radius: 200px;
+    border-radius: 200px;
      
 }
 

@@ -1,18 +1,27 @@
 import React from 'react'
-
-function Input({ placeholder, isSecure }) {
+import Image from 'next/image'
+function Input({ placeholder, propStyle, isSecure, isIcon, iconSrc }) {
     return (
-        <input
-            placeholder={placeholder}
-            type={(isSecure)?'password':'text'}
-            style={{
-                padding:'10px',
-                background: '#eaeaea',
-                border:'none',
-                borderRadius:'10px',
-                width:'100%'
-            }}
-        />
+        <div style={{
+            display:'flex',
+            alignItems:'center',
+            justifyContent:'space-between',
+            padding:'10px',
+            background: '#eaeaea',
+            borderRadius:'10px',
+            width:'100%',
+            ...propStyle,
+        }}>
+            <input
+                placeholder={placeholder}
+                type={(isSecure)?'password':'text'}
+                style={{
+                    background:'transparent',
+                    border:'none',
+                }}
+            />
+            {(isIcon)?<Image src={iconSrc} />:''}
+        </div>
     )
 }
 

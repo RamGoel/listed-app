@@ -1,0 +1,17 @@
+.dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashLeft{
+    width: 20%;
+}
+
+.dashRight{
+    width: 80%;
+}
+
+.dashRight{
+    flex-direction: column;
+}

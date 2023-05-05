@@ -1,0 +1,27 @@
+.metricBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.metricCardTop{
+    text-align: end;
+}
+.metricCard{
+    color: black;
+    padding: 20px;
+    width: 20%;
+    border-radius: 20px;
+}
+
+.metricCardBottom p{
+    margin: 0;
+}
+.metricCardBottom h3{
+    font-size: 30px;
+    margin: 5px 0px;
+    padding: 0px;
+}
