@@ -1,19 +1,20 @@
 import React from 'react'
 import Image from 'next/image'
-function Input({ placeholder, propStyle, isSecure, isIcon, iconSrc }) {
+function Input({ placeholder, propValue, propStyle, isSecure, handler, isIcon, iconSrc }) {
     return (
         <div style={{
             display:'flex',
             alignItems:'center',
             justifyContent:'space-between',
-            background: '#eaeaea',
             borderRadius:'10px',
             width:'100%',
             ...propStyle,
         }}>
             <input
                 placeholder={placeholder}
+                onClick={(e)=>handler(e)}
                 type={(isSecure)?'password':'text'}
+                value={propValue}
                 style={{
                     padding:'10px',
                     background:'transparent',
